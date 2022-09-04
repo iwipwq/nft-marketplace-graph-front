@@ -8,7 +8,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: process.env.GRAPH_URI,
+  uri: process.env.NEXT_PUBLIC_GRAPH_URI,
 });
 
 function MyApp({ Component, pageProps }: AppProps, DUMMY: any) {
